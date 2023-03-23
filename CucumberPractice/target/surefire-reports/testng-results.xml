@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-22T17:18:14 IST" name="Command line suite" finished-at="2023-03-22T17:18:40 IST" duration-ms="25444">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestNGRunner@229d10bd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-03-22T17:18:14 IST" name="Command line test" finished-at="2023-03-22T17:18:40 IST" duration-ms="25444">
+      <class name="Runner.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestNGRunner@229d10bd]" started-at="2023-03-22T17:18:14 IST" name="setUpClass" finished-at="2023-03-22T17:18:15 IST" duration-ms="728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2c16fadb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestNGRunner@229d10bd]" started-at="2023-03-22T17:18:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-22T17:18:39 IST" duration-ms="23615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a product in home page and offers page with short name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Products"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestNGRunner@229d10bd]" started-at="2023-03-22T17:18:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-22T17:18:40 IST" duration-ms="24359" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a product in home page and offers page with short name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Products"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[Beetroot]> but was:<[No data]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<[Beetroot]> but was:<[No data]>
+at org.junit.Assert.assertEquals(Assert.java:115)
+at org.junit.Assert.assertEquals(Assert.java:144)
+at StepDef.TopDealsSeachProduct.user_validate_search_results_in_home_and_topDeal_match(TopDealsSeachProduct.java:35)
+at ✽.user validate search results in home page and topDeal matches(file:///C:/MyWork/CucumberPractice/src/test/java/Feature/SearchProduct.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestNGRunner@229d10bd]" started-at="2023-03-22T17:18:40 IST" name="tearDownClass" finished-at="2023-03-22T17:18:40 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestNGRunner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.958 sec <<< FAILURE!
+runScenario(Runner.TestNGRunner)  Time elapsed: 24.362 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Beetroot]> but was:<[No data]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at StepDef.TopDealsSeachProduct.user_validate_search_results_in_home_and_topDeal_match(TopDealsSeachProduct.java:35)
+	at ?.user validate search results in home page and topDeal matches(file:///C:/MyWork/CucumberPractice/src/test/java/Feature/SearchProduct.feature:8)
+
